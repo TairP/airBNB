@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script src="/script.js"></script>
+
+    <main class="wrapper">
+
+        <section class="top-bar">
+        <div class="logo">
+            <img src="/Images/logo.png" alt="homepage">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-bar" onclick="myFunction()" placeholder="Write Something...">
+            <button type="submit" class="search-icon"><i>Search</i></button>
+        </div>
+
+        <section class="profile">
+        <div class="join">
+            <button onclick="myFunction()">Join the revolution</button>
+        </div>
+        <div class="globe">
+            <button onclick="myFunction()"><img src="/Images/world.png" alt="networking"></button>
+        </div>
+        <div class="personal">
+            <button onclick="myFunction()"><img src="/Images/eye.png" alt="profile"></button>
+        </div>
+        </section>
+        </section>
+
+        <div class="appartment-decription">
+            <section class="appartment__header">
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                <button onclick="myFunction()">Share</button>
+                <button onclick="myFunction()">Save</button>
+            </section>
+            <section class="appartment__pics">
+                    <div class="pic-1"></div>
+                <section class="group 1">
+                    <div class="pic-2"></div>
+                    <div class="pic-3"></div>
+                </section>
+                <section class="group 2">
+                    <div class="pic-4"></div>
+                    <div class="pic-5"></div>
+                </section>
+            </section>
+            <div class="body-container">
+              <section class="appartment__available">
+                    <br><h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, blanditiis?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <section class="appartment__offers">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit maxime minima doloribus omnis, libero ipsum accusantium corrupti optio quas est voluptates ex suscipit autem excepturi nam ipsam recusandae. Voluptatem voluptatum vero aliquid? Aliquam voluptate delectus, ut voluptas quisquam rerum rem non laboriosam, eveniet praesentium accusantium provident iusto libero aliquid repellendus?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil corporis voluptatum perspiciatis tempora, aperiam obcaecati incidunt earum! Quo repudiandae nam consequatur ratione eaque officiis blanditiis eveniet voluptates modi quia maxime tempora doloremque ea perferendis, officia fuga voluptatibus, in laboriosam fugiat.</p>
+                    </section>
+                    <section class="appartment__dates"></section>
+                    <section class="appartment__hidden-div"><p>I will disappear</p></section>
+              </section>
+            <section class="sticky-bar"></section>
+            </div>
+        </div>
+
+        <div class="google-maps">
+            <img src="/Images/world-map.gif" alt="world">
+        </div>
+
+        <section class="bottom-bar">
+            <div class="rights">
+                <p>© 2022</p>
+            </div>
+
+            <div class="contact">
+                <img src="/Images/paper-plane.png" alt="contact">
+            </div>
+    
+            <div class="facebook">
+                <img src="/Images/facebook.png" alt="facebook">
+            </div>
+
+            <div class="instagram">
+                <img src="/Images/instagram.png" alt="instagram">
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+<script>
+let fix_top_bar = document.querySelector(".appartment__hidden-div");
+window.addEventListener("scroll", function () {
+  console.log(scrollY);
+  if (window.scrollY > 1350) {
+    fix_top_bar.style.display = 'block';
+
+  } else {
+    fix_top_bar.style.display = 'none';
+  }
+});
+</script>
+
+</html>
